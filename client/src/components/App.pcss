@@ -1,0 +1,54 @@
+@keyframes :global(heading) {
+  0% {
+    text-shadow: 0 0 20px #f00, 0 -10px 10px #00f;
+    letter-spacing: 0;
+  }
+
+  25% {
+    text-shadow: -20px 20px 30px #f00, 20px 10px 20px #00f;
+  }
+
+  50% {
+    text-shadow: 20px 20px 30px #f00, 10px -10px 10px #00f;
+    letter-spacing: 3px;
+  }
+
+  75% {
+    text-shadow: -10px -10px 20px #f00, -10px 0px 10px #00f;
+  }
+
+  100% {
+    text-shadow: 0 0 20px #f00, 0 -10px 10px #00f;
+    letter-spacing: 0;
+  }
+}
+
+:global {
+  @import "../../node_modules/normalize.css/normalize.css";
+
+  html {
+    font-family: "Comic Sans MS";
+    background-image: url("../assets/money.jpg");
+  }
+  body {
+    padding: 1em;
+  }
+
+  h1 {
+    text-shadow: 0 0 10px #f00, 0 -10px 10px #00f;
+    color: #fff;
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  td {
+    vertical-align: top;
+  }
+}
